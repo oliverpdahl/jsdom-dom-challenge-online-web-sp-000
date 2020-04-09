@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
   let counter = document.getElementById("counter")
-  function increaseCounter(){
+  function increaseElement(element){
   }
 });
