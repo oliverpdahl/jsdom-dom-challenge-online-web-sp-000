@@ -9,5 +9,5 @@ document.addEventListener("DOMContentLoaded", () => {
       counter.innerText = Integer.toString(countInt);
     }
   }
-  changeCounter(increment)
+  changeCounter('increment')
 });
