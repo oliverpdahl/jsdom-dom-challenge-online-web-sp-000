@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const countInt = Integer.parseInt(counter.innerText);
       countInt++
       counter.innerText = Integer.toString(countInt)
-    }    
+    }
   }
 });
