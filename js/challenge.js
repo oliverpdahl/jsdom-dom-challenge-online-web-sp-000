@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function changeCounter(action){
     if action == 'increment' {
       const countInt = Integer.parseInt(counter.innerText);
-      countInt++
-      counter.innerText = Integer.toString(countInt)
+      countInt++;
+      counter.innerText = Integer.toString(countInt);
     }
   }
 });
