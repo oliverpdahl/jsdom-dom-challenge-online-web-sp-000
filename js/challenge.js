@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if action == 'increment' {
       const countInt = Integer.parseInt(counter.innerText);
       countInt++;
+      console.log(countInt)
       counter.innerText = Integer.toString(countInt);
     }
   }
