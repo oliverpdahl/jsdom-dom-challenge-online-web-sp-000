@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let countInt = getCounterInt()
     if(action === 'increment') {
       countInt++;
-
     } else if (action === 'decrement') {
       countInt--;
     }
+    setLikeArray(countInt);
     counter.innerText = countInt.toString(10);
   }
 
