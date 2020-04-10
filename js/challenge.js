@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  //Tells the number of likes that the button has when it is clicked
   const heartButton = document.getElementById('heart');
   heartButton.addEventListener('click', function(event) {
     currentNumber = getCounterInt();
@@ -82,6 +83,18 @@ document.addEventListener("DOMContentLoaded", () => {
     likeLi = document.createElement('li');
     likeLi.innerText = `The number ${currentNumber} has ${numberOfLikes} likes`
     list = document.getElementsByClassName('likes')[0].appendChild(likeLi)
+  });
+
+  //Adds comments to the comment space
+  document.getElementById("comment-form").addEventListener("submit", function(event) {
+    const description = document.getElementById("new-task-description");
+    const text = description.value;
+    console.log(text)
+    description.value = ''
+    const li = document.createElement('li')
+    li.innerText = text
+    document.getElementById('tasks').appendChild(li)
+    event.preventDefault();
   });
 
   //On startUp
