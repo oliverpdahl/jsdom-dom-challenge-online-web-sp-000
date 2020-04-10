@@ -18,4 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function increaseEverySecond(){
     const intervalIncrease = setInterval(changeCounter('increment'), 1000)
   }
+
+  increaseEverySecond
 });
