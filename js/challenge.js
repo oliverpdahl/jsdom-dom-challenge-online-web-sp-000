@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonChange('minus', 'decrement')
   buttonChange('plus', 'increment')
 
+  //Pauses when the pause button is hit and resumes when resume clicked
   function pausedButtonInside(pausedBoolean, textChange){
     countPaused = pausedBoolean;
     pausedButton.innerText = textChange
