@@ -15,10 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function increaseEverySecond(){
-    setInterval(changeCounter('increment'), 1000);
+    setInterval(function(){
+      changeCounter('increment')
+    }, 1000);
   }
 
-  function paused(){
+  function stopIfPaused(){
     if(countPaused) {
 
     } else {
@@ -26,10 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  changeCounter('increment')
-  changeCounter('increment')
-  setInterval(function(){
-    changeCounter('increment')
-  }, 1000);
-  // paused()
+  stopIfPaused()
 });
