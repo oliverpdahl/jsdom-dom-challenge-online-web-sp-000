@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(placeVal === parseInt(placeVal)){
       //could do something to integer
     } else {
+      console.log('in')
       placeVal = 0;
     }
   }
