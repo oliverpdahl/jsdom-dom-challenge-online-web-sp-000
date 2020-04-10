@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentNumber++;
     likeLi = document.createElement('li');
     likeLi.innerText = `That number has ${currentNumber} likes`
+    document.getElementsByClassName('likes').First.appendChild(likeLi)
   });
 
   //On startUp
