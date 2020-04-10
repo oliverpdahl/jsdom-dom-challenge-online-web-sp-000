@@ -47,13 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const pausedButton = document.getElementById('pause');
-  pausedButton.addEventListener('click', function(event) {
-    countPaused = true;
-    pausedButton.innerText = 'resume'
-    pausedButton.id = 'resume'
-    stopIfPaused();
-  });
+  pauseResumeButtonSet('pause', true);
+  pauseResumeButtonSet('resume', false)
 
   function stopIfPaused(){
     if(countPaused) {
