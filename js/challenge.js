@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function buttonChange(buttonId, action){
     const input = document.getElementById(buttonId);
     input.addEventListener('click', function(event) {
-      action;
+      action
     });
   }
 
