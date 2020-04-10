@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
   let counter = document.getElementById("counter")
-  let paused = false;
+  let countPaused = false;
 
   //Will increase or decrease the counter
   function changeCounter(action){
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function paused(){
-    if(paused) {
+    if(countPaused) {
 
     } else {
       increaseEverySecond()
