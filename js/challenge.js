@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = description.value;
     console.log(text)
     description.value = ''
-    const li = document.createElement('li')
-    li.innerText = text
-    document.getElementById('tasks').appendChild(li)
+    const p = document.createElement('p')
+    p.innerText = text
+    document.getElementById('list').appendChild(p)
     event.preventDefault();
   });
 
