@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Adds comments to the comment space
   document.getElementById("comment-form").addEventListener("submit", function(event) {
-    const description = document.getElementById("new-task-description");
+    const description = document.getElementById("comment-input");
     const text = description.value;
     console.log(text)
     description.value = ''
