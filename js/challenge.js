@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.innerText = id;
     button.id = id;
     button.addEventListener('click', function(event) {
-      countPaused = !countPaused;
+      countPaused = !countPaused
       stopIfPaused();
     });
   }
