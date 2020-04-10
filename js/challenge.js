@@ -47,9 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(pausedButton.innerText == 'pause') {
       pausedButtonInside(true, 'resume');
     } else {
-      countPaused = false;
-      pausedButton.innerText = 'pause'
-      stopIfPaused();
+      pausedButtonInside(false, 'pause');
     }
   });
 
