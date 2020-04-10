@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const heartButton = document.getElementById('heart');
   heartButton.addEventListener('click', function(event) {
     currentNumber = getCounterInt();
-    numberOfLikes = likeArray[currentNumber];
-    numberOfLikes++;
+    likeArray[currentNumber] += 1;
+    numberOfLikes = likeArray[currentNumber]
     likeLi = document.createElement('li');
     likeLi.innerText = `The number ${currentNumber} has ${numberOfLikes} likes`
     list = document.getElementsByClassName('likes')[0].appendChild(likeLi)
