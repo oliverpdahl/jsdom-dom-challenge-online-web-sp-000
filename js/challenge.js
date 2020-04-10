@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if(action === 'increment') {
       countInt++;
     } else if (action === 'decrement') {
-      countInt--;
+      if ((countInt - 1) >= 0){
+        countInt--;
+      }
     }
     setLikeArray(countInt);
     counter.innerText = countInt.toString(10);
