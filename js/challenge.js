@@ -11,8 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function setLikeArray(pos){
-    placeVal = likeArray[pos]
-    if(placeVal === parseInt(placeVal))
+    let placeVal = likeArray[pos]
+    if(placeVal === parseInt(placeVal)){
+      //could do something to integer
+    } else {
+      placeVal = 0;
+    }
   }
 
   //Increases or decreases the counter
