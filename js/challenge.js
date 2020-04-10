@@ -10,11 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
     return countInt
   }
 
+  function setLikeArray(pos){
+    placeVal = likeArray[pos]
+    if(placeVal === parseInt(placeVal))
+  }
+
   //Increases or decreases the counter
   function changeCounter(action){
     let countInt = getCounterInt()
     if(action === 'increment') {
       countInt++;
+
     } else if (action === 'decrement') {
       countInt--;
     }
