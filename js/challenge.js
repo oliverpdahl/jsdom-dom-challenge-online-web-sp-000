@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Increases the counter every second
   function increaseEverySecond(){
-
+    counterInterval
   }
 
   //Allows the plus and minus buttons to increase and decrease the counter
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function stopIfPaused(){
     if(countPaused) {
-      clearInterval()
+      clearInterval(counterInterval)
     } else {
       increaseEverySecond()
     }
