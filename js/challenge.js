@@ -47,14 +47,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  pauseResumeButtonSet('pause', true);
-  pauseResumeButtonSet('resume', false)
+
+
 
   function stopIfPaused(){
     if(countPaused) {
+      pauseResumeButtonSet('resume', false);
       clearInterval(counterInterval)
     } else {
       increaseEverySecond()
+      pauseResumeButtonSet('pause', true);
     }
   }
 
