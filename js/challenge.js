@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function increaseEverySecond(){
-    window.setInterval(changeCounter('increment'), 1000);
+    setInterval(changeCounter('increment'), 1000);
   }
 
   function paused(){
