@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function stopIfPaused(){
     if(countPaused) {
-
+      clearInterval()
     } else {
       increaseEverySecond()
     }
