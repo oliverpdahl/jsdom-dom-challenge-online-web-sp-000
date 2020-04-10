@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     likeLi = document.createElement('li');
     likeLi.innerText = `The number `
   });
-  
+
   //On startUp
   stopIfPaused()
 });
