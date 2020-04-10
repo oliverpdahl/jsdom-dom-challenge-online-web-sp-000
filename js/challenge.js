@@ -36,25 +36,37 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonChange('minus', 'decrement')
   buttonChange('plus', 'increment')
 
-  //pauses
-  function pauseResumeButtonSet(id, pauseBoolean){
-    const button = document.getElementById(id);
-    countPaused = pauseBoolean;
-    button.innerText = id;
-    button.id = id;
-    button.addEventListener('click', function(event) {
-      countPaused = !countPaused
+  // //pauses
+  // function pauseResumeButtonSet(id, pauseBoolean){
+  //   const button = document.getElementById(id);
+  //   countPaused = pauseBoolean;
+  //   button.innerText = id;
+  //   button.id = id;
+  //   button.addEventListener('click', function(event) {
+  //     countPaused = !countPaused
+  //     stopIfPaused();
+  //   });
+  // }
+
+
+  const pausedButton = document.getElementById('pause');
+  pausedButton.addEventListener('click', function(event) {
+    if pausedButton.innerText === 'pause' {
+      countPaused = true;
+      pausedButton.innerText = 'resume'
       stopIfPaused();
-    });
-  }
+    } else {
+      countPaused = false;
+      pausedButton.innerText = 'pause'
+      stopIfPaused();
+    }
+  });
 
   function stopIfPaused(){
     if(countPaused) {
-      pauseResumeButtonSet('resume', false);
       clearInterval(counterInterval)
     } else {
       increaseEverySecond()
-      pauseResumeButtonSet('pause', true);
     }
   }
 
