@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let counter = document.getElementById("counter")
   function changeCounter(action){
     if(action === 'increment') {
-      const countInt = parseInt(counter.innerText, 10);
+      let countInt = parseInt(counter.innerText, 10);
       countInt++;
       console.log(countInt)
       counter.innerText = countInt.toString(10);
