@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
   let countPaused = false;
-  let counterInterval = setInterval(function(){changeCounter('increment')}, 1000);
 
   //Returns the value of the counter integer
   function getCounterInt(){
@@ -23,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Increases the counter every second
   function increaseEverySecond(){
-    counterInterval
+    counterInterval = setInterval(function(){changeCounter('increment')}, 1000);
   }
 
   //Allows the plus and minus buttons to increase and decrease the counter
