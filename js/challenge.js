@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function increaseEverySecond(){
-    setInterval(changeCounter('increment'), 1000);
+    let interval = setInterval(changeCounter('increment'), 1000);
   }
 
-  increaseEverySecond
+  increaseEverySecond()
 });
