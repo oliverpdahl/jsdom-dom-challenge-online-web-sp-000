@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     countPaused = true;
     pausedButton.innerText = 'resume'
     pausedButton.id = 'resume'
+    stopIfPaused();
   });
 
   function stopIfPaused(){
