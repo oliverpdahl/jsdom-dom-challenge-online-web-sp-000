@@ -28,5 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   changeCounter('increment')
   changeCounter('increment')
+  setInterval(function(){
+    changeCounter('increment')
+  }, 1000);
   // paused()
 });
