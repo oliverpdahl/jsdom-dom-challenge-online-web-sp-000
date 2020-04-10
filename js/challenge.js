@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function setLikeArray(pos){
     let placeVal = likeArray[pos]
     if(placeVal === parseInt(placeVal)){
-      console.log('in')
       //could do something to integer
     } else {
       placeVal = 0;
