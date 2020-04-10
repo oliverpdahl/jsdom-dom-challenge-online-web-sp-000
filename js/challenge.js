@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       countInt--;
     }
     setLikeArray(countInt);
-    console.log(likeArray);
     counter.innerText = countInt.toString(10);
   }
 
