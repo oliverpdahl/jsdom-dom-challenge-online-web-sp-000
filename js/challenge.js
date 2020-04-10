@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     numberOfLikes = likeArray[currentNumber];
     numberOfLikes++;
     likeLi = document.createElement('li');
-    likeLi.innerText = `The number ${currentNumber} has ${currentNumber} likes`
+    likeLi.innerText = `The number ${currentNumber} has ${numberOfLikes} likes`
     list = document.getElementsByClassName('likes')[0].appendChild(likeLi)
   });
 
