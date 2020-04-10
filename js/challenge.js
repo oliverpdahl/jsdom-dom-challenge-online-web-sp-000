@@ -27,12 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   }
 
-  // function buttonChange
+  function buttonChange(buttonId, action){
+    const input = document.getElementById(buttonId);
+    input.addEventListener('click', function(event) {
+      action;
+    });
+  }
 
-  const input = document.getElementById('minus');
-  input.addEventListener('click', function(event) {
-    changeCounter('decrement');
-  });
+  buttonChange('minus', changeCounter('decrement'))
+  buttonChange('plus', changeCounter('increment'))
 
   function stopIfPaused(){
     if(countPaused) {
