@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
   let countPaused = false;
+  let likeArray = [];
 
   //Returns the value of the counter integer
   function getCounterInt(){
@@ -62,8 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const heartButton = document.getElementById('heart');
   heartButton.addEventListener('click', function(event) {
-    console.log('heart')
+    currentTime = getCounterInt();
+    likeLi = document.createElement('li');
+    likeLi.innerText = `The number `
   });
+  
   //On startUp
   stopIfPaused()
 });
