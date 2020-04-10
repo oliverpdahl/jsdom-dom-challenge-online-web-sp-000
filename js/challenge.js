@@ -73,9 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const heartButton = document.getElementById('heart');
   heartButton.addEventListener('click', function(event) {
-    currentTime = getCounterInt();
+    currentNumber = getCounterInt();
     likeLi = document.createElement('li');
-    likeLi.innerText = `The number `
+    likeLi.innerText = `That number has ${currentNumber} likes`
   });
 
   //On startUp
