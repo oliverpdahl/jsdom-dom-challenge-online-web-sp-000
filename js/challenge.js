@@ -36,18 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonChange('minus', 'decrement')
   buttonChange('plus', 'increment')
 
-  // //pauses
-  // function pauseResumeButtonSet(id, pauseBoolean){
-  //   const button = document.getElementById(id);
-  //   countPaused = pauseBoolean;
-  //   button.innerText = id;
-  //   button.id = id;
-  //   button.addEventListener('click', function(event) {
-  //     countPaused = !countPaused
-  //     stopIfPaused();
-  //   });
-  // }
-
+  function pausedButtonInside(pausedBoolean, textChange){
+    countPaused = pausedBoolean;
+    pausedButton.innerText = textChange
+    stopIfPaused();
+  }
 
   const pausedButton = document.getElementById('pause');
   pausedButton.addEventListener('click', function(event) {
