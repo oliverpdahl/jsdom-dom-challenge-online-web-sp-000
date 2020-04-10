@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("comment-form").addEventListener("submit", function(event) {
     const description = document.getElementById("comment-input");
     const text = description.value;
-    console.log(text)
     description.value = ''
     const p = document.createElement('p')
     p.innerText = text
