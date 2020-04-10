@@ -2,10 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // your code here
   let countPaused = false;
 
+  function getCounterInt(){
+    const counter = document.getElementById("counter");
+    const countInt = parseInt(counter.innerText, 10);
+    return countInt
+  }
+
   //Will increase or decrease the counter
   function changeCounter(action){
-    let counter = document.getElementById("counter");
-    let countInt = parseInt(counter.innerText, 10);
+    let countInt = getCounterInt()
     if(action === 'increment') {
       countInt++;
     } else if (action === 'decrement') {
