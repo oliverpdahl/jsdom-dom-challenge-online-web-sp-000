@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+  //Shared variables
   let countPaused = false;
   let likeArray = [];
 
