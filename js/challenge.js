@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   }
 
+  //Allows the plus and minus buttons to increase and decrease the counter
   function buttonChange(buttonId, action){
     const input = document.getElementById(buttonId);
     input.addEventListener('click', function(event) {
@@ -36,6 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   buttonChange('minus', 'decrement')
   buttonChange('plus', 'increment')
+
+  //pauses
+  const pausedButton = document.getElementById(pause);
+  pausedButton.addEventListener('click', function(event) {
+    countPaused = true;
+    pausedButton.innerText = 'resume'
+    pausedButton.id = 'resume'
+  });
 
   function stopIfPaused(){
     if(countPaused) {
