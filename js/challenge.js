@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // your code here
   let countPaused = false;
 
+  //This will return the value of the counter integer
   function getCounterInt(){
     const counter = document.getElementById("counter");
     const countInt = parseInt(counter.innerText, 10);
