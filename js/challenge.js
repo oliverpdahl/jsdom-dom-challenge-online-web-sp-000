@@ -60,5 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  const heartButton = document.getElementById('heart');
+  heartButton.addEventListener('click', function(event) {
+    console.log('heart')
+  });
+  //On startUp
   stopIfPaused()
 });
