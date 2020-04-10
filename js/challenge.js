@@ -45,9 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pausedButton = document.getElementById('pause');
   pausedButton.addEventListener('click', function(event) {
     if(pausedButton.innerText == 'pause') {
-      countPaused = true;
-      pausedButton.innerText = 'resume'
-      stopIfPaused();
+      pausedButtonInside(true, 'resume')
     } else {
       countPaused = false;
       pausedButton.innerText = 'pause'
