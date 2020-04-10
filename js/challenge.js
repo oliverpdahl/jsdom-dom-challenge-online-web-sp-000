@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonChange('plus', 'increment')
 
   //pauses
-  const pausedButton = document.getElementById(pause);
+  const pausedButton = document.getElementById('pause');
   pausedButton.addEventListener('click', function(event) {
     countPaused = true;
     pausedButton.innerText = 'resume'
